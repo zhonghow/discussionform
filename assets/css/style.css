@@ -1,0 +1,842 @@
+::placeholder {
+  text-align: center;
+  color: rgb(167, 167, 167) !important;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: #d1d1d1;
+  overflow-x: hidden;
+  box-sizing: border-box !important;
+  box-sizing: content-box !important;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Quicksand", sans-serif;
+}
+
+input {
+  text-align: center;
+  box-shadow: 0px 0px 6px 0.5px rgb(185, 185, 185);
+  border-radius: 20px !important;
+}
+
+input:focus {
+  box-shadow: 0px 0px 6px 0.5px rgb(185, 185, 185) !important;
+  border: 2px solid #d1d1d1 !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+textarea {
+  box-shadow: 0px 0px 6px 0.5px rgb(185, 185, 185);
+  border-radius: 25px !important;
+  resize: none;
+}
+
+#liveToast {
+  border: none !important;
+}
+
+#liveToast img {
+  width: 30px;
+  height: 30px;
+}
+
+.btn:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.badge {
+  border-radius: 20px !important;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  Home Page                                 */
+/* -------------------------------------------------------------------------- */
+
+#homePage .logo,
+#homePage .logIn,
+#homePage .notLogIn {
+  gap: 10px;
+}
+
+#homePage .notLogIn a {
+  border-radius: 15px;
+  box-shadow: 0px 0px 6px 1px rgb(185, 185, 185);
+}
+
+#homePage .logIn a:first-child {
+  border-radius: 15px;
+  box-shadow: 0px 0px 6px 1px rgb(191, 176, 116);
+}
+
+#homePage .logIn a:last-child {
+  border-radius: 15px;
+  box-shadow: 0px 0px 6px 1px rgb(156, 96, 96);
+}
+
+#homePage .card {
+  border-radius: 20px;
+  box-shadow: 5px 5px 8px 0px gray;
+  transition: 0.5s;
+}
+
+#homePage .form-container {
+  width: 100%;
+}
+
+#homePage .card {
+  border: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Login Page                                 */
+/* -------------------------------------------------------------------------- */
+
+#loginPage {
+  width: 100%;
+  height: 100vh;
+}
+
+#loginPage .box {
+  width: 350px;
+  height: 550px;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 3px 3px 8px 0px gray;
+}
+
+#loginPage .profile {
+  width: 100px;
+  height: 100px;
+  border-radius: 35px;
+  border: 5px solid black;
+}
+
+#loginPage .profile i {
+  font-size: 6em;
+  transform: translateY(10px);
+  color: black;
+}
+
+#loginPage .form-control {
+  border: 1px solid lightgray;
+}
+
+#loginPage .form-control:focus {
+  box-shadow: none;
+  caret-color: lightgray;
+  border: 2px solid black;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Sign Up Page                                */
+/* -------------------------------------------------------------------------- */
+
+#signupPage {
+  width: 100%;
+  height: 100vh;
+}
+
+#signupPage .box {
+  width: 350px;
+  height: 550px;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 3px 3px 8px 0px gray;
+}
+
+#signupPage .profile {
+  width: 100px;
+  height: 100px;
+  border-radius: 35px;
+  border: 5px solid black;
+}
+
+#signupPage .profile i {
+  font-size: 6em;
+  transform: translateY(10px);
+  color: black;
+}
+
+#signupPage .form-control {
+  border: 1px solid lightgray;
+}
+
+#signupPage .form-control:focus {
+  box-shadow: none;
+  caret-color: lightgray;
+  border: 2px solid black;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               Dashboard Page                               */
+/* -------------------------------------------------------------------------- */
+
+#Dashboard {
+  width: 100%;
+  height: 100vh;
+}
+
+#Dashboard .post-container {
+  gap: 50px;
+}
+
+#Dashboard .bi {
+  font-size: 3em;
+}
+
+#Dashboard .box {
+  width: 250px;
+  height: 350px;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 3px 3px 8px 0px gray;
+  transition: 0.3s;
+  text-decoration: none;
+  color: black;
+}
+
+#Dashboard .box:first-child:hover {
+  cursor: pointer;
+  background-color: #60d394;
+  color: white;
+  transform: scale(1.1);
+}
+
+#Dashboard .box:nth-child(2):hover {
+  cursor: pointer;
+  background-color: #ffbf81;
+  color: white;
+  transform: scale(1.1);
+}
+
+#Dashboard .box:nth-child(3):hover {
+  cursor: pointer;
+  background-color: #6eb5ff;
+  color: white;
+  transform: scale(1.1);
+}
+
+#Dashboard .box:nth-child(3):hover img {
+  filter: invert(100%);
+}
+
+#Dashboard .box:last-child:hover {
+  cursor: pointer;
+  background-color: #f25757;
+  color: white;
+  transform: scale(1.1);
+}
+
+#Dashboard .hr-line {
+  position: relative;
+  width: 500px;
+  text-align: center;
+  left: 0;
+}
+
+#Dashboard .hr-line:before {
+  content: " ";
+  display: block;
+  height: 2px;
+  border-radius: 10px;
+  width: 130px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: black;
+}
+
+#Dashboard .hr-line:after {
+  content: " ";
+  display: block;
+  height: 2px;
+  width: 130px;
+  position: absolute;
+  border-radius: 10px;
+  top: 50%;
+  right: 0;
+  background: black;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              Manage Post Page                              */
+/* -------------------------------------------------------------------------- */
+
+#managePost .logo,
+#managePost .logIn,
+#managePost .notLogIn {
+  gap: 10px;
+}
+
+#managePost .logo a {
+  border-radius: 15px;
+  box-shadow: 0px 0px 6px 1px rgb(185, 185, 185);
+}
+
+#managePost .accordion-item,
+#managePost .accordion-button {
+  border-radius: 20px !important;
+}
+
+#managePost .accordion-button::after {
+  display: none;
+}
+
+#managePost .accordion-button:focus {
+  outline: none;
+  box-shadow: none;
+  background-color: white;
+  color: black;
+}
+
+#managePost .accordion-button:not(:focus) {
+  outline: none;
+  box-shadow: none;
+  background-color: white;
+  color: black;
+}
+
+#managePost .manage a {
+  border-radius: 15px;
+  box-shadow: 0px 0px 6px 1px rgb(185, 185, 185);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               Edit Post Page                               */
+/* -------------------------------------------------------------------------- */
+
+#editPost .container {
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px 1px rgb(185, 185, 185);
+}
+
+#editPost .form-control {
+  border: 1px solid lightgray;
+}
+
+#editPost .form-control:focus {
+  box-shadow: none;
+  caret-color: lightgray;
+  border: 2px solid black;
+}
+
+#editPost .form-control:not(:focus) {
+  border: 2px solid lightgray;
+}
+
+#editPost #postContent {
+  resize: none;
+}
+
+#editPost .hr-line {
+  position: relative;
+  width: 500px;
+  text-align: center;
+  left: 0;
+}
+
+#editPost .hr-line:before {
+  content: " ";
+  display: block;
+  height: 2px;
+  border-radius: 10px;
+  width: 130px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: black;
+}
+
+#editPost .hr-line:after {
+  content: " ";
+  display: block;
+  height: 2px;
+  width: 130px;
+  position: absolute;
+  border-radius: 10px;
+  top: 50%;
+  right: 0;
+  background: black;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Add Post Page                               */
+/* -------------------------------------------------------------------------- */
+
+#addPost .container {
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px 1px rgb(185, 185, 185);
+}
+
+#addPost .form-control {
+  border: 1px solid lightgray;
+}
+
+#addPost .form-control:focus {
+  box-shadow: none;
+  caret-color: lightgray;
+  border: 2px solid black;
+}
+
+#addPost .form-control:not(:focus) {
+  border: 2px solid lightgray;
+}
+
+#addPost #postContent {
+  resize: none;
+}
+
+#addPost .hr-line {
+  position: relative;
+  width: 500px;
+  text-align: center;
+  left: 0;
+}
+
+#addPost .hr-line:before {
+  content: " ";
+  display: block;
+  height: 2px;
+  border-radius: 10px;
+  width: 130px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: black;
+}
+
+#addPost .hr-line:after {
+  content: " ";
+  display: block;
+  height: 2px;
+  width: 130px;
+  position: absolute;
+  border-radius: 10px;
+  top: 50%;
+  right: 0;
+  background: black;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              Manage User Page                              */
+/* -------------------------------------------------------------------------- */
+
+#manageUser .logo,
+#manageUser .logIn,
+#manageUser .notLogIn {
+  gap: 10px;
+}
+
+#manageUser .logo a {
+  border-radius: 15px;
+  box-shadow: 0px 0px 6px 1px rgb(185, 185, 185);
+}
+
+#manageUser .profile {
+  height: 100px;
+  width: 100px;
+  border-radius: 15px;
+  border: 3px solid black;
+}
+
+#manageUser .profile i {
+  font-size: 7rem;
+  transform: translateY(17px);
+  color: black;
+  position: relative;
+  z-index: 0;
+}
+
+#manageUser a {
+  text-decoration: none;
+}
+
+#manageUser .card {
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px 1px rgb(185, 185, 185);
+  transition: 0.3s;
+  border: none;
+  color: black;
+  position: relative;
+}
+
+#manageUser .overlay {
+  transition: 0.3s;
+  border-radius: 25%;
+  position: absolute;
+  background-color: #dfd3c300;
+  width: 0;
+  height: 100%;
+}
+
+#manageUser .card:hover .overlay {
+  background-color: #00000086;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#manageUser .overlay > * {
+  opacity: 0;
+}
+
+#manageUser .card:hover .overlay > * {
+  opacity: 1;
+}
+
+#manageUser .form-container {
+  gap: 36px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               Edit User Page                               */
+/* -------------------------------------------------------------------------- */
+
+#editUser .profile {
+  height: 100px;
+  width: 100px;
+  border-radius: 25px;
+  border: 3px solid black;
+}
+
+#editUser .profile i {
+  font-size: 6rem;
+  color: black;
+  transform: translateY(12px);
+}
+
+#editUser a {
+  text-decoration: none;
+}
+
+#editUser .card {
+  box-shadow: 0px 0px 6px 1px rgb(185, 185, 185);
+  transition: 0.3s;
+  border: none;
+  color: black;
+}
+
+#editUser .form-container {
+  gap: 12px;
+}
+
+#editUser .item-container {
+  gap: 12px;
+}
+
+#editUser .input-container {
+  gap: 12px;
+}
+
+#editUser .form-control {
+  border: 1px solid lightgray;
+}
+
+#editUser .form-control:focus {
+  box-shadow: none;
+  caret-color: lightgray;
+  border: 2px solid black;
+}
+
+#editUser .hr-line {
+  position: relative;
+  width: 500px;
+  text-align: center;
+  left: 0;
+}
+
+#editUser .hr-line:before {
+  content: " ";
+  display: block;
+  height: 2px;
+  border-radius: 10px;
+  width: 130px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: black;
+}
+
+#editUser .hr-line:after {
+  content: " ";
+  display: block;
+  height: 2px;
+  width: 130px;
+  position: absolute;
+  border-radius: 10px;
+  top: 50%;
+  right: 0;
+  background: black;
+}
+
+#editUser .col-md-4 {
+  border-right: 1px solid lightgray;
+  height: 75%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               Add User Page                               */
+/* -------------------------------------------------------------------------- */
+
+#addUser .profile {
+  height: 100px;
+  width: 100px;
+  border-radius: 25px;
+  border: 3px solid black;
+}
+
+#addUser .profile i {
+  font-size: 6rem;
+  color: black;
+  transform: translateY(12px);
+}
+
+#addUser a {
+  text-decoration: none;
+}
+
+#addUser .card {
+  box-shadow: 0px 0px 6px 1px rgb(185, 185, 185);
+  transition: 0.3s;
+  border: none;
+  color: black;
+}
+
+#addUser .form-container {
+  gap: 12px;
+}
+
+#addUser .item-container {
+  gap: 12px;
+}
+
+#addUser .input-container {
+  gap: 12px;
+}
+
+#addUser .form-control {
+  border: 1px solid lightgray;
+}
+
+#addUser .form-control:focus {
+  box-shadow: none;
+  caret-color: lightgray;
+  border: 2px solid black;
+}
+
+#addUser .hr-line {
+  position: relative;
+  width: 500px;
+  text-align: center;
+  left: 0;
+}
+
+#addUser .hr-line:before {
+  content: " ";
+  display: block;
+  height: 2px;
+  border-radius: 10px;
+  width: 130px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: black;
+}
+
+#addUser .hr-line:after {
+  content: " ";
+  display: block;
+  height: 2px;
+  width: 130px;
+  position: absolute;
+  border-radius: 10px;
+  top: 50%;
+  right: 0;
+  background: black;
+}
+
+#addUser .col-md-4 {
+  border-right: 1px solid lightgray;
+  height: 75%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               Other Page                                   */
+/* -------------------------------------------------------------------------- */
+
+#Other {
+  width: 100%;
+  height: 100vh;
+}
+
+#Other .post-container {
+  gap: 50px;
+}
+
+#Other .bi {
+  font-size: 3em;
+}
+
+#Other .box {
+  width: 250px;
+  height: 350px;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 3px 3px 8px 0px gray;
+  transition: 0.3s;
+  text-decoration: none;
+  color: black;
+}
+
+#Other .box:first-child:hover {
+  cursor: pointer;
+  background-color: #60d394;
+  color: white;
+  transform: scale(1.1);
+}
+
+#Other .box:first-child:hover img {
+  filter: invert(100%);
+}
+
+#Other .box:nth-child(2):hover {
+  cursor: pointer;
+  background-color: #6eb5ff;
+  color: white;
+  transform: scale(1.1);
+}
+
+#Other .box:nth-child(2):hover img {
+  filter: invert(100%);
+}
+
+#Other .box:last-child:hover {
+  cursor: pointer;
+  background-color: #f25757;
+  color: white;
+  transform: scale(1.1);
+}
+
+#Other .hr-line {
+  position: relative;
+  width: 450px;
+  text-align: center;
+  left: 0;
+}
+
+#Other .hr-line:before {
+  content: " ";
+  display: block;
+  height: 2px;
+  border-radius: 10px;
+  width: 130px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: black;
+}
+
+#Other .hr-line:after {
+  content: " ";
+  display: block;
+  height: 2px;
+  width: 130px;
+  position: absolute;
+  border-radius: 10px;
+  top: 50%;
+  right: 0;
+  background: black;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               Cat Facts Page                               */
+/* -------------------------------------------------------------------------- */
+
+#CatFacts {
+  width: 100%;
+  height: 100vh;
+}
+
+#CatFacts .post-container {
+  gap: 50px;
+}
+
+#CatFacts .bi {
+  font-size: 3em;
+}
+
+#CatFacts .box {
+  width: 250px;
+  height: 350px;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 3px 3px 8px 0px gray;
+  transition: 0.3s;
+  text-decoration: none;
+  color: black;
+}
+
+#CatFacts .box:first-child:hover {
+  cursor: pointer;
+  background-color: #60d394;
+  color: white;
+  transform: scale(1.1);
+}
+
+#CatFacts .box:nth-child(2):hover {
+  cursor: pointer;
+  background-color: #6eb5ff;
+  color: white;
+  transform: scale(1.1);
+}
+
+#CatFacts .box:nth-child(2):hover img {
+  filter: invert(100%);
+}
+
+#CatFacts .box:last-child:hover {
+  cursor: pointer;
+  background-color: #f25757;
+  color: white;
+  transform: scale(1.1);
+}
+
+#CatFacts .hr-line {
+  position: relative;
+  width: 450px;
+  text-align: center;
+  left: 0;
+}
+
+#CatFacts .hr-line:before {
+  content: " ";
+  display: block;
+  height: 2px;
+  border-radius: 10px;
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: black;
+}
+
+#CatFacts .hr-line:after {
+  content: " ";
+  display: block;
+  height: 2px;
+  width: 100px;
+  position: absolute;
+  border-radius: 10px;
+  top: 50%;
+  right: 0;
+  background: black;
+}
